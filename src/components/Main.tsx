@@ -33,13 +33,13 @@ function Main() {
                     <em>
                       What would you say that are the best features of your rubber duck?
                     </em>
-                    {item.bestFeatures}
+                    {item.bestFeatures.join(' ')}
                   </p>
                   <p className="Ans-p">
                     <em>
                       What would you say that are the worst nags of your rubber duck?
                     </em>
-                    {item.worstFeatures}
+                    {item.worstFeatures.join(' ')}
                   </p>
                   <p className="Ans-p">
                     <em>How do you rate your rubber duck consistency?</em>
@@ -55,7 +55,7 @@ function Main() {
                   </p>
                   <p className="Ans-p">
                     <em>How do you like to spend time with your rubber duck?</em>
-                    {item.timeSpent}
+                    {item.timeSpent.join(' ')}
                   </p>
                   <p className="Ans-p">
                     <em>What else have you got to say about your rubber duck?</em>
@@ -66,43 +66,7 @@ function Main() {
             </li>
           ))}
         </ul>
-        <li>
-          <article className="answer">
-            <h3>{initialForm.username} said:  </h3>
-            <p>
-              <em>
-                What would you say that are the best features of your rubber duck?
-              </em>
-              {/* <ItemsList list={bestFeatures} /> */}
-            </p>
-            <p>
-              <em>
-                What would you say that are the worst nags of your rubber duck?
-              </em>
-              {/* <ItemsList list={worstFeatures} /> */}
-            </p>
-            <p>
-              <em>How do you rate your rubber duck consistency?</em>
-              {/* <span className="answer__line">{consistency}</span> */}
-            </p>
-            <p>
-              <em>How do you rate your rubber duck colour?</em>
-              {/* <span className="answer__line">{colour}</span> */}
-            </p>
-            <p>
-              <em>How do you rate your rubber duck logo?</em>
-              {/* <span className="answer__line">{logo}</span> */}
-            </p>
-            <p>
-              <em>How do you like to spend time with your rubber duck?</em>
-              {/* <ItemsList list={timeSpent} /> */}
-            </p>
-            <p>
-              <em>What else have you got to say about your rubber duck?</em>
-              {/* <span className="answer__line">{review}</span> */}
-            </p>
-          </article>
-        </li>
+
 
       </section>
       <section className="main__form">
@@ -353,7 +317,7 @@ function Main() {
               <label>
                 <input type="checkbox" name='spent time' value='Swimming' />
                 <span>
-                  Swimming
+                  Swimming!
                 </span>
               </label>
             </li>
@@ -361,7 +325,7 @@ function Main() {
               <label>
                 <input type="checkbox" name='spent time' value='Bathing' />
                 <span>
-                  Bathing
+                  Bathing!
                 </span>
               </label>
             </li>
@@ -369,7 +333,7 @@ function Main() {
               <label>
                 <input type="checkbox" name='spent time' value='Chatting' />
                 <span>
-                  Chatting
+                  Chatting!
                 </span>
               </label>
             </li>
@@ -377,7 +341,7 @@ function Main() {
               <label>
                 <input type="checkbox" name='spent time' value="I don't like spending time with it" />
                 <span>
-                  I don't like spending time with it
+                  I don't like spending time with it!
                 </span>
               </label>
             </li>
